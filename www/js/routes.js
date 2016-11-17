@@ -31,22 +31,22 @@ angular.module('app.routes', [])
   .state('categorias', {
     url: '/category',
     templateUrl: 'templates/categorias.html',
-    controller: 'categoriasCtrl'
+    controller: 'category'
   })
 
   .state('listaDe', {
     url: '/list',
     templateUrl: 'templates/listaDe.html',
-    controller: 'listaDeCtrl'
+    controller: 'list'
   })
 
   .state('mazaXisSalada', {
     url: '/selected',
     templateUrl: 'templates/mazaXisSalada.html',
-    controller: 'mazaXisSaladaCtrl'
+    controller: 'food'
   })
 
-$urlRouterProvider.otherwise('/login')
+$urlRouterProvider.otherwise('/category')
 
 
 

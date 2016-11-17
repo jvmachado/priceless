@@ -1,4 +1,4 @@
-<ion-view title="Lista de " id="page7">
+<ion-view title="Lista de {{title}}" id="page7">
   <ion-content padding="true" class="has-header">
     <form id="listaDe-form3" class="list">
       <label class="item item-input" id="listaDe-search1">
@@ -6,16 +6,10 @@
         <input type="search" placeholder="Buscar">
       </label>
     </form>
-    <div id="listaDe-container2">
-      <ion-list id="listaDe-list4">
-        <ion-item id="listaDe-list-item7" ui-sref="mazaXisSalada">Maza
-          <span class="item-note">Xis Salada: R$15,00</span>
-        </ion-item>
-        <ion-item id="listaDe-list-item8">RU
-          <span class="item-note">Pizza Média: R$12,00</span>
-        </ion-item>
-        <ion-item id="listaDe-list-item9">Espaço 32
-          <span class="item-note"> Cachorro Quente: R$5,00</span>
+    <div id="listaDe-container2" ng-init="loadItems()">
+      <ion-list id="listaDe-list4" ng-repeat="item in items">
+        <ion-item ng-click="getId($event)" id="{{item.id}}">{{item.estabelecimento}}<br>
+          <span class="item-note">{{item.nome}}: R${{item.custo}}</span>
         </ion-item>
       </ion-list>
     </div>

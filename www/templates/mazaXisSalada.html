@@ -1,15 +1,15 @@
-<ion-view title="Maza - Xis Salada" id="page8">
+<ion-view title="{{ali.estabelecimento.nome}} - {{ali.nome}}" id="page8">
   <ion-content padding="true" class="has-header">
     <div>
       <img src="img/NbuaonURBaOdbWmyv1mW_Screenshot_2.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
     </div>
     <ion-list id="mazaXisSalada-list5">
       <ion-item class="item-icon-left energized" id="mazaXisSalada-list-item10">
-        <i class="icon ion-coffee"></i>Maza - Xis Salada
+        <i class="icon ion-coffee"></i>{{ali.estabelecimento.nome}} - {{ali.nome}}
         <span class="item-note">★★★★☆</span>
       </ion-item>
       <ion-item id="mazaXisSalada-list-item17">Valor:
-        <span class="item-note">R$ 15,00</span>
+        <span class="item-note">R$ {{ali.custo}}</span>
       </ion-item>
     </ion-list>
     <div class="spacer" style="width: 300px; height: 40px;"></div>
