@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('app', ['ionic', 'app.controllers.list','app.controllers.category','app.controllers.food', 'app.routes', 'app.directives','app.services.http','app.services.list'])
+angular.module('app', ['ionic', 'app.controllers.list','app.controllers.category','app.controllers.food','app.controllers.finances', 'app.routes', 'app.directives','app.services.http','app.services.list'])
 
 .config(function($ionicConfigProvider, $sceDelegateProvider){
 

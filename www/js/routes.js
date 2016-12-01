@@ -46,6 +46,12 @@ angular.module('app.routes', [])
     controller: 'food'
   })
 
+  .state('financas', {
+    url: '/finances',
+    templateUrl: 'templates/financas.html',
+    controller: 'financas'
+  })
+
 $urlRouterProvider.otherwise('/category')
 
 

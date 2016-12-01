@@ -1,0 +1,26 @@
+<ion-modal-view class="new_modal">
+  <ion-header-bar align-title="center" class="bar-positive new-header">
+    <h1 class="title" style="text-align">Nova meta</h1>
+  </ion-header-bar>
+  <ion-content class="padding" style="background:#a8c0e8;">
+    <div style="margin-left: auto;margin-right: auto;display: block;padding:20px;padding-top:50%;">
+      <div style="background:#387ef5;height: 275px;color:white;">
+        <p>Nome da meta:</p>
+        <input  style="margin-left: auto;margin-right: auto;display: block;margin-bottom:2px;width:280px" type="text" ng-model="meta.titulo" placeholder="Nome da meta"></input>
+        <p>Valor para guardar:</p>
+        <input style="margin-left: auto;margin-right: auto;display: block;margin-bottom:2px;width:280px" type="number" min='0' ng-model="meta.valor" placeholder="Valor"></input>
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 col-md-4">
+            <p>Data de início:</p>
+            <input style="margin-left: auto;margin-right: auto;display: block;margin-bottom:2px; margin-right:5px;" ng-model="meta.inicio" type="date"></input>
+          </div>
+          <div class="col-lg-4 col-sm-4 col-md-4">
+            <p>Data de fim:</p>
+            <input style="margin-left: auto;margin-right: auto;display: block;margin-bottom:2px;" ng-model="meta.fim" type="date"></input>
+          </div>
+        </div>
+        <a id="categorias-button7" style="border-radius:0px 0px 0px 0px;" class="button button-calm button-large button-block" ng-click="sendMeta()">Enviar</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
