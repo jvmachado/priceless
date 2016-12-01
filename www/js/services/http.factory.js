@@ -41,6 +41,19 @@ angular.module('app.services.http', [])
     var promise = deferred.promise;
     return promise;
   }
+  factory.sendGasto = function(value) {
+    var deferred = $q.defer();
+    var promise = deferred.promise;
+    $http({
+      method: "POST",
+      data:value,
+      url: url+"adicionargasto"
+    }).then(function(response){
+      deferred.resolve(response.data);
+    });
+    var promise = deferred.promise;
+    return promise;
+  }
   factory.sendMeta = function(value) {
     var deferred = $q.defer();
     var promise = deferred.promise;

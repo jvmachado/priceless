@@ -1,0 +1,16 @@
+<ion-modal-view class="new_modal">
+  <ion-header-bar align-title="center" class="bar-positive new-header">
+    <h1 class="title" style="text-align">Novo Gasto</h1>
+  </ion-header-bar>
+  <ion-content class="padding" style="background:#a8c0e8;">
+    <div style="margin-left: auto;margin-right: auto;display: block;padding:20px;padding-top:50%;">
+      <div style="background:#387ef5;height: 175px;color:white;">
+        <p>Descrião do gasto:</p>
+        <input  style="margin-left: auto;margin-right: auto;display: block;margin-bottom:2px;width:80%" type="text" ng-model="gasto.descricao" placeholder="Descrição do gasto"></input>
+        <p>Valor para guardar:</p>
+        <input style="margin-left: auto;margin-right: auto;display: block;margin-bottom:2px;width:80%" type="number" min='0' ng-model="gasto.valor" placeholder="Valor"></input>
+        <a id="categorias-button7" style="border-radius:0px 0px 0px 0px;" class="button button-calm button-large button-block" ng-click="sendGasto()">Enviar</a>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>
